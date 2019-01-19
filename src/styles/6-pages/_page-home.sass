@@ -1,0 +1,139 @@
+
+// All styles start from here 
+
+
+/* start fo the header section  */
+
+/* ----------------------------------- */
+
+#home-header
+    width : 100% 
+    height : 100% 
+    .wrapper 
+        nav 
+            display: flex
+            flex-wrap: wrap
+            padding: 25px 0
+            .brand-logo
+                flex: 1
+                // border : 1px solid red 
+                a
+                    img
+                        width : 220px 
+                        height : 38px
+                        margin-top : -5px 
+            .mobile-menu-btn
+                display: none
+
+            ul 
+                display: flex 
+                flex : 2 
+                margin : 0
+                justify-content: flex-end
+                align-items: center
+                // border : 1px solid red 
+
+                li 
+                    list-style: none 
+                    margin : 0 15px 
+                    &:nth-child(4)
+                        margin-right : 0
+                    a 
+                        font-size : 16px   
+                        margin : 0
+                        font-weight: 550
+                        text-transform: uppercase
+                        color : #ffffff
+                        text-decoration: none
+                        position: relative
+                        &:after
+                            content : ''
+                            position: absolute
+                            padding: 20px 
+                            opacity: 0
+                            top : -10px
+                            left : -10px 
+                            width : calc(100% + 20px) 
+                            transform: scaleX(0.4)
+                            height : 17px 
+                            transform-origin: center
+                            transition: 0.2s ease-out
+                            border-bottom: 4px solid $heading-color
+                        &:hover:after 
+                            opacity: 1
+                            transform: scaleX(1)
+
+
+
+//Navigation Responsiveness 
+
+@media (max-width : 690px)
+    #home-header 
+        background-color : #ffffff
+        box-shadow: 0px 4px 8px rgba(#000000, 0.3)
+    .wrapper
+        nav 
+            position: relative
+            flex-direction: column
+            perspective: 2000
+            .brand-logo
+                width: 100% !important 
+                flex : 1
+            ul 
+                flex-wrap: wrap
+                width: 100% !important 
+                display: none !important
+                transform-origin: bottom
+                &.hide-menu
+                    display: none
+                &.show-menu
+                    display: block !important       
+                    li 
+                        animation: showMenuSmooth 600ms ease-in forwards
+                        opacity: 0
+                        &:nth-child(2)
+                            animation-delay: 0.2s
+                        
+                        &:nth-child(3)
+                            animation-delay: 0.4s
+
+                        &:nth-child(4)
+                            animation-delay: 0.6s
+
+                flex : 1
+
+                li 
+                    width : 100%
+                    margin : 25px -20px !important 
+                    
+                    a 
+                        color : $heading-color !important 
+
+            .mobile-menu-btn
+                position: absolute
+                width: 40px 
+                height : 40px
+                // border : 1px solid red 
+                display: flex !important
+                justify-content: flex-end
+                align-items: center
+                top : 25px
+                right : 0px
+
+                .fas 
+                    font-size: 30px
+
+
+@keyframes showMenuSmooth
+    0%
+        opacity: 0.1
+        transform: translate3d(-300px, 0px, 0px)
+    
+    100% 
+        opacity: 1
+        transform: translateX(0px, 0px, 0px)
+                    
+                    
+                    // display: block !important
+                            
+                
