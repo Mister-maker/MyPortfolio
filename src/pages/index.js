@@ -2,7 +2,7 @@ import React from 'react'
 
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import headerBackground from '../images/header.png'
+import headerBackground from '../images/header-compressor.png'
 import projectOne from '../images/card_image.jpg'
 
 const IndexPage = () => (
