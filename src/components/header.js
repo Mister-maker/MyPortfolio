@@ -22,8 +22,8 @@ render() {
             <div class="brand-logo"><a href="/"> <img src={logo} alt="Logo" /></a></div>                
               <ul id="menu" className={this.state.classShow ? "hide-menu" : "show-menu"}>
                   <li><a href="/">Home </a></li>
-                  <li> <a href="/about/">About</a></li>
-                  <li> <a href="/work/">Work </a></li>
+                  <li> <a href="/about/">About Me</a></li>
+                  <li> <a href="/work/">My Work </a></li>
                   <li><a href="/contact/">Contact Me</a></li>
               </ul>
               <div class="mobile-menu-btn" id="menu-button"><i class="fas fa-bars" onClick={this.toggleclass}></i></div>

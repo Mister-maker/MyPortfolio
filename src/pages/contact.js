@@ -1,20 +1,30 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import emailImage from '../images/email.svg'
 
 const SecondPage = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Hi from the second page</h1>
-    <p>Welcome to Contact Page </p>
-    <p>Please leave a message for me.. </p>
-    <form name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
-      <p><input type="hidden" name="form-name" value="contact" />  </p>
-      <p><input type="text" name="name" placeholder="Your Name"/></p>
-      <p><input type="email" name="email" placeholder="Your Email"/></p>
-      <p><textarea name="message">Yor Message </textarea></p>
-      <p><input type="submit" value="submit"/></p>
-    </form>     
+    <section id="about-page">
+        <div class="wrapper">
+            <div class="about-page-section">
+                <div class="about-page-section__left">
+                  <img src={emailImage} alt="Mail Image" />
+                </div>
+                <div class="about-page-section__right">
+                    <form>
+                        <div class="input-group">
+                        <input type="hidden" name="form-name" value="contact" /> 
+                        <input type="text" name="name" placeholder="Your Name" />
+                        <input type="email" name="email" placeholder="Your Email" />
+                        <textarea name="message" placeholder="Remember, be nice!"></textarea>
+                        <button class="btn" type="submit">Send </button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>   
   </Layout>
 )
 
