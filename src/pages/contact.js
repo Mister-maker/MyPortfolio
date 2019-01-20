@@ -13,9 +13,9 @@ const SecondPage = () => (
                   <img src={emailImage} alt="Mail Image" />
                 </div>
                 <div class="about-page-section__right">
-                    <form name="contact-form" method="post" netlify-honeypot="bot-field" data-netlify="true">
+                    <form name="protfolio-contact-form" method="post" netlify-honeypot="bot-field" data-netlify="true">
                         <div class="input-group">
-                          <input type="hidden" name="form-name" value="contact" /> 
+                          <input type="hidden" name="form-name" value="protfolio-contact-form" /> 
                           <input type="text" name="name" placeholder="Your Name" />
                           <input type="email" name="email" placeholder="Your Email" />
                           <textarea name="message" placeholder="Remember, be nice!"></textarea>
