@@ -1,0 +1,174 @@
+
+// Page Work Section 
+
+#work-section 
+    margin-top : 200px
+    position: relative
+    &:before 
+        content : ''
+        position: absolute
+        top : -400px
+        right : -615px
+        width : 120% 
+        height: 120% 
+        background-image: url(../images/header.png)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        animation: headerBAckanime 500ms cubic-bezier(.165, .84, .44, 1) forwards 500ms
+        opacity: 0
+        z-index: -1
+
+    .wrapper 
+        .row 
+            display: grid
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))
+            grid-gap : 34px
+            
+            .col-1
+                animation-delay: 100ms
+            .col-2
+                animation-delay: 200ms
+            .col-3
+                animation-delay: 300ms
+            .col-4
+                animation-delay: 400ms
+            .col-5
+                animation-delay: 500ms 
+            .col-6
+                animation-delay: 600ms
+    
+            div 
+                img 
+                    width : 100%
+                    height: 100%
+                    position: absolute
+                    object-fit: cover
+                    transition: all 250ms cubic-bezier(.550, .055, .675, .19) 
+
+            div 
+                position: relative
+                min-height: 300px
+                display: flex
+                justify-content: center
+                flex-direction: column
+                align-items: center 
+                overflow: hidden
+                animation: opacity 1s cubic-bezier(.25, .46, .45, .94) forwards
+                opacity: 0
+
+                .image-caption 
+                    text-align: center
+                    width : 100% 
+                    color : #ffffff
+                    position: absolute
+                    transition: all 400ms cubic-bezier(.25, .46, .45, .94)
+                    padding: 30px 
+                    background-color: rgba($heading-color, 0.7)
+                    top : 100% 
+                    opacity: 0 !important
+
+                    span
+                        color : #ffffff
+                        font-size : 13px  
+                        transform: translate3d(0px, -10px, 0px)
+                        transition: 250ms cubic-bezier(.25, .46, .45, .94) 150ms
+                        opacity: 0
+                        margin-bottom: 10px
+                        font-style: italic
+                    p 
+                        color : #ffffff
+                        font-size: 18px 
+                        text-transform: uppercase
+                        font-weight: bold
+                        transform: translate3d(0px, 30px, 0px)
+                        transition: 250ms cubic-bezier(.25, .46, .45, .94) 200ms
+                        opacity: 0
+                        word-spacing: 1px
+                        letter-spacing: 0.5px 
+                    a 
+                        display: block
+                        padding: 0.8em 1.75em
+                        border : 2px solid #ffffff
+                        color : #ffffff
+                        font-weight: 300
+                        font-size: 12px
+                        text-transform: uppercase
+                        text-decoration: none
+                        letter-spacing: 2px
+                        transform: translate3d(0px, 60px, 0px) 
+                        transition: 250ms cubic-bezier(.25, .46, .45, .94) 250ms
+                        opacity: 0
+                        position: relative
+
+                        &::before
+                            content: ''
+                            position: absolute 
+                            width : 0% 
+                            height : 100% 
+                            background-color: #ffffff
+                            transition: 200ms ease-out
+                            top : 0
+                            left : 0
+                            z-index: -4
+
+                        &:hover 
+                            color : #000000
+
+                        &:hover::before
+                            width : 100% 
+
+                
+                &:hover .image-caption 
+                    top : 0
+                    opacity: 1 !important 
+                
+                &:hover .image-caption span 
+                    transform: translate3d(0px, 0px, 0px) 
+                    opacity: 1
+                
+                &:hover .image-caption p
+                    transform: translate3d(0px, 0px, 0px)
+                    opacity: 1
+
+                &:hover .image-caption a 
+                    transform: translate3d(0px, 0px, 0px) 
+                    opacity: 1
+
+                &:hover img 
+                    transform: scale(1.05)
+
+
+@media (max-width: 1090px)
+    #work-section 
+        &:before 
+            top : -550px
+            right : -630px
+            width : 120% 
+            height: 120% 
+
+@media (max-width : 878px)
+    #work-section 
+        &:before 
+            top : -650px
+            right : -430px
+            width : 120% 
+            height: 120% 
+
+@media (max-width : 687px)
+    #work-section
+        margin-bottom: -100px
+        &:before 
+            top : -1350px
+            right: -40px  
+        
+
+@media (max-width : 480px)
+    #work-section
+        &:before 
+            top : -1400px
+            right: -20px
+        
+        .wrapper 
+            .row 
+                padding: 10px
