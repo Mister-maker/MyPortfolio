@@ -1,0 +1,161 @@
+
+#about-centent-section
+    margin-top : 200px
+    position : relative
+    &:before 
+        content : ''
+        position: absolute
+        top : -600px
+        right : -515px
+        width : 120% 
+        height: 50% 
+        background-image: url(../images/header.png)
+        background-repeat: no-repeat
+        background-size: contain
+        background-position: center
+        z-index: -1
+
+    .wrapper 
+        .photos-heading
+            margin : 50px 0
+            h1
+                font-size : 30px 
+                color : $heading-color 
+        .row 
+            display : grid 
+            grid-template-columns: 1fr 1fr 
+            grid-column-gap : 40px 
+            min-height : 600px
+            border-bottom : 1px solid $heading-color 
+            padding-bottom : 40px 
+
+            div 
+                height : 100% 
+                img 
+                    width : 100% 
+                    height : 100% 
+                    object-fit : cover
+
+                p 
+                    font-size : 15px 
+                    color : darken($pra-color, 15%)
+                    line-height : 2
+                
+                h3 
+                    font-size : 40px 
+                    font-weight : 600
+                    color : $heading-color 
+                    margin : 0 0 30px 0
+
+                a 
+                    text-decoration : none 
+                    color : darken($pra-color, 15%)
+                    position : relative
+                    box-shadow: 0px -3px 0px 0px #00FFA7 inset
+                    
+                    &:hover 
+                        box-shadow: 0px -18px 0px 0px #00FFA7 inset
+                        transition : box-shadow 150ms ease-out 
+                        color : #000
+
+
+        .row-2 
+            display : grid 
+            grid-gap : 25px 
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr))
+
+            div 
+                width : 100% 
+                height : 250px 
+                position : relative 
+                img 
+                    width : 100% 
+                    height : 100% 
+                    object-fit : cover 
+
+                &:before 
+                    position: absolute
+                    content : '\f004'
+                    top : 0
+                    left : 0 
+                    width : 100% 
+                    height : 100% 
+                    background-color : rgba($heading-color, 0.4)
+                    cursor : pointer   
+                    font-family: 'Font Awesome\ 5 Free'
+                    display : flex 
+                    justify-content : center 
+                    align-items : center 
+                    color : #fff
+                    font-size : 30px 
+                    transition : all 150ms ease-out
+                    transform : scale(0)
+                    opacity : 0
+                
+                &:hover:before
+                    transform : scale(1)
+                    opacity : 1
+
+
+@media (max-width : 1190px)
+    #about-centent-section
+        &:before 
+            top : -750px
+            right : -500px
+
+
+
+@media (max-width : 880px)
+    #about-centent-section
+        &:before 
+            top : -750px
+            right : -400px
+
+        margin-bottom : -100px 
+        .wrapper 
+            .row
+                div 
+                    height : 80%
+
+@media (max-width : 753px)
+    #about-centent-section
+        .wrapper 
+            .row
+                grid-template-columns : 1fr 
+                grid-row-gap : 40px 
+                padding : 10px 
+                div 
+                    img 
+                        height :  500px 
+
+            .row-2
+                padding : 10px 
+
+@media (max-width : 680px )
+    #about-centent-section
+        &:before 
+            top : -2000px !important 
+            right : -20px !important 
+            height : 100%
+
+        .wrapper 
+            .row-2 
+                div 
+                    height : 300px 
+    
+
+@media (max-width : 480px)
+    #about-centent-section
+        &:before 
+            top : -2150px !important 
+            right : -20px !important 
+            height : 100%
+        .wrapper 
+            .row
+                div 
+                    img 
+                        height :  350px 
+
+            .row-2 
+                div 
+                    height : 300px 

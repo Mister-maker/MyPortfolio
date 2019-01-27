@@ -26,9 +26,8 @@ const IndexPage = () => (
     <section id="home-projects-section">
         <div class="wrapper">
             <div class="project__heading">
-                <h3>CURRENT PROJETCS</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas, amet eos libero sunt repellendus at
-                    debitis.</p>
+                <h3>CURRENT PROJECTS</h3>
+                <p>Go to my current projects to learn about me and my kool work.</p>
             </div>
             <div class="project__row">
                 <div class="project__col-1">
