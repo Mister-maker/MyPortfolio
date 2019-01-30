@@ -1,7 +1,8 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import Profile from '../images/card_image.jpg'
+import Profile from '../images/profile.jpg'
+import Card from '../images/card_image.jpg'
 
 const SecondPage = () => (
   <Layout>
@@ -32,14 +33,14 @@ const SecondPage = () => (
             <h1>Latest Photos</h1>
           </div>
           <div class="row-2">
-            <div class="col-1"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-2"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-3"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-4"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-5"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-6"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-7"><img src={Profile} alt="lates photos" /></div>
-            <div class="col-8"><img src={Profile} alt="lates photos" /></div>
+            <div class="col-1"><img src={Card} alt="lates photos" /></div>
+            <div class="col-2"><img src={Card} alt="lates photos" /></div>
+            <div class="col-3"><img src={Card} alt="lates photos" /></div>
+            <div class="col-4"><img src={Card} alt="lates photos" /></div>
+            <div class="col-5"><img src={Card} alt="lates photos" /></div>
+            <div class="col-6"><img src={Card} alt="lates photos" /></div>
+            <div class="col-7"><img src={Card} alt="lates photos" /></div>
+            <div class="col-8"><img src={Card} alt="lates photos" /></div>
           </div>
       </div>
     </section> 
