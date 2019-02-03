@@ -4,7 +4,7 @@ import logoTwo from '../images/light-logo.png'
 const Footer = () => (
     <footer id="footer">
         <div class="wrapper">
-            <div class="footer__brand-logo"><img src={logoTwo} /></div>
+            <div class="footer__brand-logo"><img src={logoTwo} alt=""/></div>
             <div class="footer__social-links">
                 <a href="https://github.com/Mister-maker" target="blank"><i class="fab fa-github"></i></a>
                 <a href="https://twitter.com/Man_of_focus" target="blank"> <i class="fab fa-twitter"></i></a>

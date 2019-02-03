@@ -10,7 +10,7 @@ const SecondPage = () => (
         <div class="wrapper">
             <div class="about-page-section">
                 <div class="about-page-section__left">
-                  <img src={emailImage} alt="Mail Image" />
+                  <img src={emailImage} alt="" />
                 </div>
                 <div class="about-page-section__right">
                     <form name="portfolio-contact-form" method="post" netlify-honeypot="bot-field" data-netlify="true">

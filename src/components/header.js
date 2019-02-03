@@ -19,7 +19,7 @@ render() {
       <header id="home-header">
       <div class="wrapper">
           <nav>
-            <div class="brand-logo"><a href="/"> <img src={logo} alt="Logo" /></a></div>                
+            <div class="brand-logo"><a href="/"> <img src={logo} alt="" /></a></div>                
               <ul id="menu" className={this.state.classShow ? "hide-menu" : "show-menu"}>
                   <li><a href="/">Home </a></li>
                   <li> <a href="/about/">About Me</a></li>

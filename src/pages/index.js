@@ -32,7 +32,7 @@ const IndexPage = () => (
             <div class="project__row">
                 <div class="project__col-1">
                     <div class="inner-project">
-                        <div class="project__card__image"><img src={projectOne} /></div>
+                        <div class="project__card__image"><img src={projectOne} alt=""/></div>
                         <div class="project__card__content"><span>about project</span>
                             <h3>this is for trevel website</h3><a href="#">see now </a>
                         </div>
@@ -40,7 +40,7 @@ const IndexPage = () => (
                 </div>
                 <div class="project__col-2">
                     <div class="inner-project">
-                        <div class="project__card__image"><img src={projectOne} /></div>
+                        <div class="project__card__image"><img src={projectOne} alt=""/></div>
                         <div class="project__card__content"><span>about project</span>
                             <h3>this is for trevel website</h3><a href="#">see now </a>
                         </div>
@@ -48,7 +48,7 @@ const IndexPage = () => (
                 </div>
                 <div class="project__col-3">
                     <div class="inner-project">
-                        <div class="project__card__image"><img src={projectOne} /></div>
+                        <div class="project__card__image"><img src={projectOne} alt=""/></div>
                         <div class="project__card__content"><span>about project</span>
                             <h3>this is for trevel website</h3><a href="#">see now </a>
                         </div>
@@ -56,7 +56,7 @@ const IndexPage = () => (
                 </div>
                 <div class="project__col-4">
                     <div class="inner-project">
-                        <div class="project__card__image"><img src={projectOne} /></div>
+                        <div class="project__card__image"><img src={projectOne} alt=""/></div>
                         <div class="project__card__content"><span>about project</span>
                             <h3>this is for trevel website</h3><a href="#">see now </a>
                         </div>
